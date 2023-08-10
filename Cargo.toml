@@ -6,3 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+poem = "1"
+poem-openapi = { version = "3", features = ["swagger-ui"] }
+sqlx = { version = "0.6.0", features = ["runtime-tokio-rustls", "sqlite"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+tokio-stream = "0.1.8"
